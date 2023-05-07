@@ -1,0 +1,88 @@
+{
+  "menu": [
+    {
+      "plats": [
+        {
+          "nom": "Riz simple",
+          "prix": "10",
+          "ingredients": "Riz blanc, pèsi, Ail"
+        },
+        {
+          "nom": "Riz, Sauce au poulet",
+          "prix": "20",
+          "ingredients": "Riz blanc, pèsi, Ail"
+        },
+        {
+          "nom": "Riz blanc complet",
+          "prix": "35",
+          "ingredients": "Riz blanc, pèsi, Ail"
+        },
+        {
+          "nom": "Riz djon djon",
+          "prix": "30",
+          "ingredients": "Riz blanc, pèsi, Ail"
+        },
+        {
+          "nom": "Spagetti ht",
+          "prix": "15",
+          "ingredients": "Riz blanc, pèsi, Ail"
+        },
+        {
+          "nom": "Poisson gros sel",
+          "prix": "30",
+          "ingredients": "Riz blanc, pèsi, Ail"
+        },
+        {
+          "nom": "Poisson, Banane pesées",
+          "prix": "40",
+          "ingredients": "Riz blanc, pèsi, Ail"
+        },
+        {
+          "nom": "Riz blanc, Salade",
+          "prix": "20",
+          "ingredients": "Riz blanc, pèsi, Ail"
+        },
+        {
+          "nom": "Poulet, Banane pesées",
+          "prix": "25",
+          "ingredients": "Riz blanc, pèsi, Ail"
+        },
+        {
+          "nom": "Soupe joumou",
+          "prix": "10",
+          "ingredients": "Riz blanc, pèsi, Ail"
+        },
+        {
+          "nom": "Griot de tofu",
+          "prix": "50",
+          "ingredients": "Riz blanc, pèsi, Ail"
+        },
+        {
+          "nom": "Griot de porc",
+          "prix": "55",
+          "ingredients": "Riz blanc, pèsi, Ail"
+        }      
+      ]
+    },
+    {
+      "boissons": [
+        { "nom": "Citronade", "prix": "5" },
+        { "nom": "Godrin ananas", "prix": "15" },
+        { "nom": "Corossol", "prix": "10" },
+        { "nom": "Grenadia", "prix": "15" },
+        { "nom": "Pasthèque", "prix": "10" },
+        { "nom": "Cocktail Zombie", "prix": "30" },
+        { "nom": "Crémas rapide", "prix": "35" }
+      ]
+    },
+    {
+      "dessert": [
+        { "nom": "Gateau au beurre", "prix": "12" },
+        { "nom": "Douce Makos", "prix": "10" },
+        { "nom": "Bougonnen", "prix": "15" },
+        { "nom": "Pain patate", "prix": "7" },
+        { "nom": "Kokiyòl", "prix": "5" }
+      ]
+    }
+  ]
+}

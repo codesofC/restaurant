@@ -1,0 +1,815 @@
+main{
+    overflow: clip;
+}
+.home{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--bg-primary);
+}
+.home-left{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 5rem;
+    gap: 5rem;
+}
+.home-left .logo-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.home-left .logo-container h1{
+    font-size: 400%;
+    color: var(--white-primary);
+    font-family: var(--font-title);
+}
+.home-left .logo-container h1 .title{
+    color: #f39400;
+    font-family: var(--font-title);
+}
+.home-left .logo-container h4{
+    font-size: 150%;
+    font-weight: 500;
+    font-style: italic;
+    color: var(--bg-tercery);
+    font-family: var(--font-title);
+}
+.home-left .btns{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15%;
+    padding: 1rem;
+}
+.home-left .btns button{
+    padding: 1rem 2rem;
+    background: transparent;
+    border: 1px solid var(--white-primary);
+    color: var(--white-primary);
+    font-size: 110%;
+    font-weight: 700;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background .2s ease-in,
+                border .2s ease-in;
+}
+.home-left .btns button:hover{
+    background: var(--bg-tercery);
+    border: 1px solid var(--bg-tercery)
+}
+
+.home-right{
+    width: 50%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--bg-primary-dark);
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
+    overflow: hidden;
+}
+.home-right .img-container{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.home-right .img-container img{
+    width: 100%;
+    height: 130%;
+    object-fit: contain;
+    transform-origin: right;
+    transform: rotate(15deg);
+}
+.home-right .svg-img{
+    width: 90%;
+    opacity: .1;
+}
+
+/*========================== END ===================================*/
+
+/* ======================== SUBHOME ================================*/
+.subhome{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--bg-primary);
+}
+.subhome .subhome-middle{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 30%;
+    height: 100%;
+    padding: 3rem 2%;
+    background-color: var(--bg-tercery);
+    color: var(--bg-light);
+}
+.subhome .subhome-middle h1{
+    margin-bottom: 1rem;
+    font-size: 200%;
+    font-family: var(--font-title);
+    font-weight: 200;
+}
+.subhome .subhome-middle p{
+    line-height: 30px;
+    font-size: 100%;
+}
+.subhome .subhome-left,
+.subhome .subhome-right{
+    width: 35%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 0;
+}
+.subhome .subhome-left .glass,
+.subhome .subhome-right .glass{
+    position: relative;
+    width: 40%;
+    height: 120px;
+    background: linear-gradient(135deg, rgba(255, 255, 255, .3), rgba(255, 255, 255, .05));
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, .15);
+    box-shadow: 0 5px 15px 0 rgba(255, 255, 255, .2);
+}
+.subhome .subhome-left .glass .img{
+    position: absolute;
+    top: -8rem;
+    right: 0;
+    width: 250px;
+    height: 300px;
+    object-fit: contain;
+}
+.subhome .subhome-right .glass .img{
+    width: 150px;
+    height: 200px;
+    position: absolute;
+    top: -6rem;
+    right: 0;
+    object-fit: contain;
+}
+
+/* ============================== ChefSection ============================*/
+.chef-section{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 2%;
+    background-color: var(--black-primary);
+    padding: 2rem 5%;
+}
+.chef-section .box-left{
+    position: relative;
+    width: 50%;
+    height: 80vh;
+}
+.chef-section .box-left .container-img{
+    width: 100%;
+    height: 100%;
+}
+.chef-section .box-left .img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.chef-section .box-left .container-img h1{
+    display: none;
+    font-family: var(--font-title);
+    font-weight: 200;
+    color: var(--bg-tercery);
+    font-size: 100%;
+    margin-bottom: .5rem;
+}
+.chef-section .box-left .container-img h3{
+    display: none;
+    color: var(--bg-light);
+    font-size: 150%;
+}
+.chef-section .box-left .overImage{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(20, 16, 15 .1), rgba(0, 0, 0, .5));
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+.chef-section .box-left .overImage button{
+    padding: .5rem 1rem;
+    font-size: 100%;
+    border: 1px solid var(--bg-tercery);
+    background-color: transparent;
+    color: var(--bg-tercery);
+    border-radius: 5px;
+    cursor: pointer;
+    opacity: 0;
+    transition: background .3s ease-in-out,
+                color .3s ease-in-out;
+}
+.chef-section .box-left .overImage button:hover{
+    background: var(--bg-tercery);
+    color: var(--bg-light);
+}
+.chef-section .box-right{
+    position: relative;
+    width: 50%;
+    height: 100%;
+}
+.chef-section .box-right .close,
+.gallery .slides .close{
+    display: none;
+    position: absolute;
+    top: 1.5rem;
+    right: 3%;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+.chef-section .box-right .close span,
+.gallery .slides .close span{
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: var(--white-primary);
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.chef-section .box-right .close span:nth-child(2),
+.gallery .slides .close span:nth-child(2){
+    transform: rotate(45deg);
+}
+.chef-section .box-right .close span:nth-child(1),
+.gallery .slides .close span:nth-child(1){
+    transform: rotate(-45deg);
+}
+.chef-section .box-right h1{
+    display: inline;
+    font-family: var(--font-title);
+    font-size: 150%;
+    font-weight: 200;
+    color: var(--bg-light);
+    background: var(--bg-tercery);
+    padding: 2rem 2% 1rem 2%;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.chef-section .box-right h3{
+    color: var(--bg-light);
+    font-size: 200%;
+    margin-bottom: 1rem;
+    margin-top: 2rem;
+}
+.chef-section .box-right p{
+    color: var(--bg-light);
+    font-size: 100%;
+    font-weight: 400;
+    margin-bottom: 1rem;
+}
+
+/*========================== Conctact ========================*/
+.contact{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.contact .effect-paper{
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 3rem;
+    background: var(--bg-tercery);
+}
+
+.contact .effect-paper .svg{
+    position: absolute;
+    left: 0;
+    bottom: -3rem;
+    width: 100%;
+    height: 100%;
+}
+.contact .effect-paper .svg-to{
+    position: absolute;
+    left: 0;
+    top: -3rem;
+    width: 100%;
+    height: 100%;
+    transform: rotateZ(180deg);
+}
+.contact .infos{
+    background: url("../public/assets/bg-contact.webp") center no-repeat;
+    color: var(--bg-light);
+    font-size: 100%;
+}
+.contact .infos .infos-content{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 7rem 5%;
+    background: rgba(0, 0, 0, .8);
+}
+.contact .infos .adress a{
+    text-decoration: none;
+    color: var(--bg-light);
+    font-style: italic;
+    font-size: 150%;
+}
+.contact .infos .site a{
+    text-decoration: none;
+    color: var(--bg-tercery);
+}
+.contact .infos .day-hours{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.contact .infos .day-hours .days{
+    font-size: 110%;
+}
+.contact .infos .day-hours .hours{
+    color: var(--bg-tercery);
+}
+.contact .infos .socials-medias{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+.contact .infos .socials-medias a{
+    text-decoration: none;
+    font-size: 130%;
+    color: var(--bg-light);
+    transition: color .2s ease-in;
+}
+.contact .infos .socials-medias a:hover{
+    color: var(--bg-tercery);
+}
+.contact .infos .btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.contact .infos .btn button{
+    padding: 1rem 2rem;
+    background: transparent;
+    border: 1px solid var(--white-primary);
+    color: var(--white-primary);
+    font-size: 110%;
+    font-weight: 700;
+    border-radius: 10px;
+    margin: 2rem 0;
+    cursor: pointer;
+    transition: background .2s ease-in,
+                border .2s ease-in;
+}
+.contact .infos .btn button:hover{
+    background: var(--bg-tercery);
+    border: 1px solid var(--bg-tercery);
+}
+
+/* ================================== END CONTACT ======================================*/
+
+/*============================= ABout ===========================*/
+.about{
+    display: flex;
+    justify-content: center;
+    flex-direction: row-reverse;
+    gap: 2%;
+    background: var(--bg-primary);
+}
+.about .box-left{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    height: 100%;
+}
+.about .box-left .img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.about .box-right{
+    width: 50%;
+    height: 100%;
+    padding: 2rem 5%;
+}
+.about .box-right h1{
+    display: inline;
+    font-family: var(--font-title);
+    font-size: 150%;
+    font-weight: 200;
+    color: var(--bg-light);
+    padding: 2rem 2% 1rem 2%;
+    background: var(--black-primary);
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+.about .box-right .text{
+    margin-top: 2rem;
+}
+.about .box-right p{
+    color: var(--bg-light);
+    font-size: 100%;
+    font-weight: 400;
+    margin-bottom: 1rem;
+}
+
+/*====================================== END About ==================================*/
+
+/*============================= Gallery ============================*/
+.gallery{
+    position: relative;
+    width: 100%;
+    padding: 2rem 5%;
+    background: var(--black-primary);
+}
+.gallery h1{
+    display: inline;
+    font-size: 150%;
+    font-family: var(--font-title);
+    font-weight: 200;
+    color: var(--bg-light);
+    margin-bottom: 3rem;
+    padding: 2rem 1% 1rem 1%;
+    background: var(--bg-tercery);
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+.gallery .images{
+    display: grid;
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    max-width: 1500px;
+    gap: .2rem;
+    align-items: center;
+    margin: 1rem auto;
+}
+.gallery .images .img{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    padding: 1rem 2%;
+    cursor: pointer;
+    transition: .2s ease-in-out;
+}
+.gallery .images .img .over-img{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    transition: background .2s ease-in,
+                height .2s ease-in-out;
+}
+.gallery .images .img:hover .over-img{
+    height: 100%;
+    background: rgba(255, 255, 255, .1);
+}
+
+.gallery .slides{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 5rem 2%;
+    display: none;
+    align-items: center;
+    justify-content: space-between;
+    background: radial-gradient(rgba(0, 0, 0, .5),rgba(0, 0, 0, .7), rgba(0,0,0, 1));
+}
+.gallery .slides.active{
+    display: flex;
+}
+.gallery .slides .left,
+.gallery .slides .right{
+    width: 10%;
+    font-size: 200%;
+    color: var(--bg-light);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: color .2s ease-in;
+}
+.gallery .slides .left:hover,
+.gallery .slides .right:hover{
+    color: var(--bg-tercery);
+}
+.gallery .slides .slide{
+    width: 50%;
+    height: 100%;
+    background: rgba(255, 255, 250, .9);
+    padding: 3rem 5%;
+}
+.gallery .slides .slide img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.gallery .slides .close{
+    display: block;
+}
+.gallery .slides .close:hover span{
+    background: var(--bg-tercery);
+}
+
+/*================================ END Gallery ===========================*/
+
+/* =========================== Menu ====================================*/
+.menu{
+    width: 100%;
+    background: var(--black-primary);
+}
+.menu .effect-paper{
+    position: relative;
+    width: 100%;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--bg-tercery);
+}
+.menu .effect-paper img{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+}
+.menu .effect-paper .svg{
+    bottom: -3rem;
+}
+.menu .effect-paper .svg-to{
+    top: -3rem;
+    transform: rotateZ(180deg);
+}
+
+.menu .menu-container{
+    padding: 3rem 2%;
+    position: relative;
+}
+.menu .menu-container h1{
+    display: inline;
+    position: absolute;
+    top: -1rem;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--bg-tercery);
+    padding: 3rem 2% 1rem 2%;
+    color: var(--bg-light);
+    font-family: var(--font-title);
+    font-weight: 200;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.menu .menu-container .menu-content{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5%;
+    align-items: flex-end;
+}
+.menu .menu-element{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: .5rem;
+    padding: 1rem 2%;
+}
+.menu .menu-element h2{
+    text-align: center;
+    font-size: 170%;
+    margin-bottom: 1.5rem;
+    color: var(--bg-tercery);
+    font-family: var(--font-title);
+    font-weight: 200;
+}
+.menu .menu-element .img{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 4rem;
+}
+.menu .menu-element .img img{
+    width: 150px;
+    height: auto;
+    object-fit: cover;
+}
+.menu .menu-element .menu-element-box{
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+.menu .menu-element .menu-element-box > div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.menu .menu-element .menu-element-box .name-ingredients .name,
+.menu .menu-element .menu-element-box .name{
+    color: var(--bg-light);
+    font-size: 100%;
+    font-weight: 700;
+}
+.menu .menu-element .menu-element-box .name-ingredients .ingredients{
+    color: rgba(255, 255, 255, .7);
+    font-size: 60%;
+}
+.menu .menu-element .menu-element-box .price{
+    color: var(--bg-tercery);
+    font-size: 120%;
+    font-weight: 800;
+}
+.menu .menu-element .menu-element-box.plats-price{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5%;
+}
+
+/* ======================= END Menu =========================*/
+/* ========================= Footer =========================== */
+footer{
+    padding: 1rem 0;
+    text-align: center;
+    font-size: 80%;
+}
+
+@media (max-width: 1200px){
+    .subhome .subhome-left .glass,
+    .subhome .subhome-right .glass{
+        width: 60%;
+    }
+    .subhome .subhome-middle{
+        padding: 1rem 2%;
+    }
+    .gallery .images{
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+    .gallery .slides .slide{
+        width: 60%;
+        height: 80%;
+    }
+    .menu .menu-element h2{
+        font-size: 150%;
+    }
+    .menu .menu-element .menu-element-box .name-ingredients .name,
+    .menu .menu-element .menu-element-box .name{
+        font-size: 80%;
+    }
+    .menu .menu-element .menu-element-box .price{
+        font-size: 100%;
+    }
+    .menu .menu-container .menu-content{
+        gap: 2%;
+    }
+}
+@media (max-width: 1000px){
+    .subhome .subhome-left .glass,
+    .subhome .subhome-right .glass{
+        width: 70%;
+    }
+    .about{
+        align-items: center;
+    }
+    .gallery .images{
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+    .gallery .slides .slide{
+        width: 60%;
+        height: 60%;
+    }
+    .menu .menu-container .menu-content{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (max-width: 820px){
+    .subhome .subhome-left .glass,
+    .subhome .subhome-right .glass{
+        width: 90%;
+    }
+    .subhome .subhome-middle h1{
+        font-size: 170%;
+    }
+    .subhome .subhome-middle p{
+        line-height: 25px;
+    }
+    .about{
+        background: url("../public/assets/restau.webp") center fixed no-repeat;
+    }
+    .about .box-left{
+        display: none;
+    }
+    .about .box-right{
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, .9);
+        backdrop-filter: blur(2px);
+    }
+    .gallery .images{
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+    .gallery .slides .slide{
+        width: 80%;
+        height: 40%;
+    }
+}
+@media (max-width: 720px){
+    .home-right{
+        display: none;
+    }
+    .home-left{
+        width: 100%;
+        justify-content: center;
+        padding-top: 0;
+    }
+    .subhome{
+        flex-direction: column;
+    }
+    .subhome .subhome-right{
+        display: none;
+    }
+    .subhome .subhome-left,
+    .subhome .subhome-middle{
+        width: 100%;
+    }
+    .subhome .subhome-middle{
+        padding: 2rem 10%;
+    }
+    .subhome .subhome-left{
+        margin-top: 2rem;
+    }
+    .subhome .subhome-left .glass{
+        width: 60%;
+    }
+    .chef-section .box-left{
+        width: 100%;
+    }
+    .chef-section .box-right{
+        width: 100%;
+        height: 0;
+        display: none;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        background: rgba(0, 0, 0, .9);
+        padding: 2rem 3%;
+        transition: height 5s ease-in-out,
+                    display .2s ease-in-out;
+    }
+    .chef-section .box-right.active{
+        height: 100%;
+        display: block;
+    }
+    .chef-section .box-left .overImage button{
+        opacity: 1;
+    }  
+    .chef-section .box-right .close{
+        display: block;
+    }
+    .chef-section .box-right .close:hover span{
+        background: var(--bg-tercery);
+    }
+    .chef-section .box-left .container-img h1,
+    .chef-section .box-left .container-img h3{
+        display: block;
+    }
+    .chef-section .box-left .img{
+        height: 80%;
+    }
+    .contact .infos .adress a{
+        font-size: 120%;
+    }
+    .menu .menu-container .menu-content{
+        grid-template-columns: 1fr;
+    }
+    .menu .menu-container .menu-content{
+        margin-top: 2rem;
+    }
+}

@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Wet+Paint&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600;700;800&display=swap');
+
+
+
+:root{
+    --bg-primary: #263A29;
+    --bg-secondary: #41644A;
+    --bg-tercery: #E86A33;
+    --bg-light: #F2E3DB;
+    --bg-light-segondary: #ffffffc9;
+    --white-primary: #fff;
+    --black-primary: rgb(20, 16, 15);
+    --black-secondary: #3333;
+    --bg-primary-dark: rgba(24, 31, 27, 0.199);
+    --font-title: 'Rubik Wet Paint', cursive;
+    --font-text: 'Poppins', sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font-text);
+}
+
+
+section{
+    width: 100%;
+    min-height: 50vh;
+}
