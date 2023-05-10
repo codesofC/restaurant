@@ -546,7 +546,7 @@ main{
 /* =========================== Menu ====================================*/
 .menu{
     width: 100%;
-    background: var(--black-primary);
+    background: var(--bg-primary);
 }
 .menu .effect-paper{
     position: relative;
@@ -556,7 +556,7 @@ main{
     align-items: center;
     justify-content: center;
     background: var(--bg-tercery);
-    overflow-x: hidden;
+    overflow: hidden;
 }
 .menu .effect-paper img{
     width: 100%;
