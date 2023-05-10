@@ -298,6 +298,7 @@ main{
     justify-content: center;
     height: 3rem;
     background: var(--bg-tercery);
+    overflow: hidden;
 }
 
 .contact .effect-paper .svg{
@@ -555,6 +556,7 @@ main{
     align-items: center;
     justify-content: center;
     background: var(--bg-tercery);
+    overflow-x: hidden;
 }
 .menu .effect-paper img{
     width: 100%;
@@ -735,9 +737,8 @@ footer{
     .gallery .images{
         grid-template-columns: repeat(2, minmax(0, 1fr));
     }
-    .gallery .slides .slide{
-        width: 80%;
-        height: 40%;
+    .gallery .slides.active{
+        display: none;
     }
 }
 @media (max-width: 720px){
@@ -811,5 +812,10 @@ footer{
     }
     .menu .menu-container .menu-content{
         margin-top: 2rem;
+    }
+}
+@media (max-width: 430px){
+    .gallery .images{
+        grid-template-columns: 1fr;
     }
 }

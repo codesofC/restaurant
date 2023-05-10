@@ -1,6 +1,4 @@
 import { useState, useEffect } from "react";
-import Aos from "aos";
-import "aos/dist/aos.css";
 import Image from "next/image";
 import { FaArrowAltCircleLeft, FaArrowAltCircleRight } from "react-icons/fa";
 
@@ -30,15 +28,12 @@ const Gallery = () => {
   const [indexSlide, setIndexSlide] = useState(0);
   const [display, setDisplay] = useState(false);
 
-  useEffect(() => {
-    Aos.init({ duration: 1000 });
-  }, []);
 
   const displaySlide = (disp, index) => {
     setDisplay(disp);
     setTimeout(() => {
       setIndexSlide(index - 1);
-    }, 100);
+    }, 1);
   };
 
   const setValueIndex = (arg) => {
@@ -60,7 +55,7 @@ const Gallery = () => {
   return (
     <section className="gallery" id="gallery">
       <h1>Galerie</h1>
-      <div className="images" data-aos="zoom-out-down">
+      <div className="images">
         {images.map((item) => (
           <div
             className="img"
